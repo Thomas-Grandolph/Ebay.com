@@ -4,13 +4,15 @@ import {EbayNavbar} from 'src/app/navigation/navbar.component';
 import { AppComponent } from './app.component';
 import {EbayFooter} from 'src/app/Footer/Footer.component';
 import {EbayTopNavBar} from 'src/app/TopNavBar/TopNavBar.component';
+import {EbayTopCard} from 'src/app/TopCard/TopCard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EbayNavbar,
     EbayFooter,
-    EbayTopNavBar
+    EbayTopNavBar,
+    EbayTopCard
   ],
   imports: [
     BrowserModule

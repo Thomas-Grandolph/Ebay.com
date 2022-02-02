@@ -8,6 +8,7 @@ import {EbayTopCard} from 'src/app/TopCard/TopCard.component';
 import {EbayMiddleCarousel} from 'src/app/MiddleCarousel/MiddleCarousel.component';
 import {EbayAd} from 'src/app/Ad/Ad.component';
 import {EbayMiddleButtons} from 'src/app/MiddleButtons/MiddleButtons.component';
+import { newcardComponent} from 'src/app/newcard/newcard.compoent';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {EbayMiddleButtons} from 'src/app/MiddleButtons/MiddleButtons.component';
     EbayTopCard,
     EbayMiddleCarousel,
     EbayAd,
-    EbayMiddleButtons
+    EbayMiddleButtons,
+    newcardComponent
   ],
   imports: [
     BrowserModule

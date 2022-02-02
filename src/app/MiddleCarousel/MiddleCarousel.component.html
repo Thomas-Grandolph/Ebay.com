@@ -18,117 +18,119 @@
     <div class="col-6">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                            <img src="{{img}}" style=height:230px>
-                          <h5 class="card-title">${{price}}</h5>
-                          <p class="card-text">{{discount}}</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                            <img src="/assets/airpods.jpeg" style=height:230px>
-                            <h5 class="card-title">199.99</h5>
-                            <p class="card-text">no sale</p>
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-sm-4" *ngFor="let product of products">
+
+                            <newcard img={{product.img}} price={{product.price}} discount={{product.discount}}>
+                            </newcard>
 
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <img src="/assets/airpods.jpeg" style=height:230px>
-                           <h5 class="card-title">199.99</h5>
-                          <p class="card-text">no sale</p>
-                            
-                          </div>
+                        <!-- <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src={{product.img}} style=height:230px>
+                                    <h5 class="card-title">${{product.price}}</h5>
+                                    <p class="card-text">{{product.discount}}</p>
+
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="/assets/airpods.jpeg" style=height:230px>
+                                    <h5 class="card-title">{{price}}</h5>
+                                    <p class="card-text">{{discount}}</p>
+
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                            <img src="/assets/airpods.jpeg" style=height:200px>
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                            <img src="/assets/airpods.jpeg" style=height:200px>
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <img src="/assets/airpods.jpeg" style=height:200px>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                            <img src="/assets/airpods.jpeg" style=height:200px>
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                            <img src="/assets/airpods.jpeg" style=height:200px>
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <img src="/assets/airpods.jpeg" style=height:200px>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-              </div>
+                </div>
             </div>
-            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon btn btn-primary" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon btn btn-primary" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <!-- <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{img}}" style=height:230px>
+                                <h5 class="card-title">${{price}}</h5>
+                                <p class="card-text">{{discount}}</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{img}}" style=height:230px>
+                                <h5 class="card-title">${{price}}</h5>
+                                <p class="card-text">{{discount}}</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{img}}" style=height:230px>
+                                <h5 class="card-title">${{price}}</h5>
+                                <p class="card-text">{{discount}}</p>
+
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <!-- <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/assets/airpods.jpeg" style=height:200px>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/assets/airpods.jpeg" style=height:200px>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/assets/airpods.jpeg" style=height:200px>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon btn btn-primary" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon btn btn-primary" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>

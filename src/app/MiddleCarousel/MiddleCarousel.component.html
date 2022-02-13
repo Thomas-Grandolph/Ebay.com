@@ -14,39 +14,13 @@
             </div>
         </div>
     </div>
+    <div class="col-8">
+    <div class="d-flex p-2 bd-highlight">
+        <div class="" *ngFor="let product of products">
+            <newcard img={{product.img}} price={{product.price}} discount={{product.discount}}>
 
-    <div class="col-6">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-sm-4" *ngFor="let product of products">
-                            <newcard img={{product.img}} price={{product.price}} discount={{product.discount}}>
-
-                            </newcard>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="row">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="row">
-                </div>
-            </div>
+            </newcard>
         </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon btn btn-primary" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon btn btn-primary" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    </div>
     </div>
 </div>

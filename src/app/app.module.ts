@@ -9,6 +9,15 @@ import {EbayMiddleCarousel} from 'src/app/MiddleCarousel/MiddleCarousel.componen
 import {EbayAd} from 'src/app/Ad/Ad.component';
 import {EbayMiddleButtons} from 'src/app/MiddleButtons/MiddleButtons.component';
 import { newcardComponent} from 'src/app/newcard/newcard.compoent';
+import { EbaylowerCard} from 'src/app/lowerCard/lowerCard.component';
+import { AppRoutingModule } from './app-routing.module';
+import { EbaySignIn} from 'src/app/SignIn/SignIn.component';
+import { EbaydefaultLayout } from './defaultLayout/defaultLayout.component';
+import { Ebayregister } from './register/register.component';
+import { EbaybrandOutlet } from './brandOutlet/brandOutlet.component';
+import { EbaydailyDeals } from './dailyDeals/dailyDeals.component';
+import { EbayhelpAndContact } from './helpAndContact/helpAndContact.component';
+
 
 @NgModule({
   declarations: [
@@ -20,10 +29,18 @@ import { newcardComponent} from 'src/app/newcard/newcard.compoent';
     EbayMiddleCarousel,
     EbayAd,
     EbayMiddleButtons,
-    newcardComponent
+    newcardComponent,
+    EbaylowerCard, 
+    EbaySignIn,
+    EbaydefaultLayout,
+    Ebayregister,
+    EbaybrandOutlet,
+    EbaydailyDeals,
+    EbayhelpAndContact
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

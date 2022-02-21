@@ -7,23 +7,46 @@
         </div>
         <div class="d-flex justify-content-center col-3">
             <div class="row h-10">
-                <div class="col-1">
+                <div class="col-6">
                     <input class="form-control mr-sm-2" type="search" placeholder="First name" aria-label="Search">
                 </div>
 
-                <div class="col-2">
+                <div class="col-6">
                     <input class="form-control mr-sm-2" type="search" placeholder="Last name" aria-label="Search">
                 </div>
+           
+
+            <input class="form-control mr-sm-1" type="search" placeholder="Email" aria-label="Search">
+            <input class="form-control mr-sm-1" type="search" placeholder="Password" aria-label="Search">
+
+            <div class="d-flex justify-content-center">
+                    <p class= "text-center">By Creating an account, you agree to our </p> <p class= "text-center text-primary"><u> User</u></p>
+
+             </div>
+             <div class="d-flex justify-content-center">
+                <p class= "text-center text-primary"><u> Agreement</u></p> <p class= "text-center">and acknowledge reading our</p> <p class= "text-center text-primary"><u>privacy policy</u></p>
+
+         </div>
+         <div class="d-flex justify-content-center">
+            <p class= "text-center text-primary"><u>Notice</u></p>
+
+     </div>
+     <div class="d-flex justify-content-center col-sm">
+    
+        <button type="button" class=" rounded-pill btn btn-secondary btn-lg text-white ">Create account</button>
+        
+    </div>
             </div>
 
-            <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Search">
-            <input class="form-control mr-sm-2" type="search" placeholder="Password" aria-label="Search">
-            </div>
+            
+        </div>
+
+
 
             or
 
-            
-    <div class="d-flex justify-content-center col-3">
+
+    <div class="d-flex justify-content-center col-3 btn-group-vertical">
         
         <div class="" *ngFor="let button of buttons">
     <newButton img={{button.img}} text={{button.text}} color={{button.color}} textColor="{{button.textColor}}">
@@ -36,3 +59,5 @@
     <div class="col-3">
     </div>
     </div>
+
+    

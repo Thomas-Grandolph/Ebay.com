@@ -8,7 +8,7 @@ import {EbayTopCard} from 'src/app/TopCard/TopCard.component';
 import {EbayMiddleCarousel} from 'src/app/MiddleCarousel/MiddleCarousel.component';
 import {EbayAd} from 'src/app/Ad/Ad.component';
 import {EbayMiddleButtons} from 'src/app/MiddleButtons/MiddleButtons.component';
-import { newcardComponent} from 'src/app/newcard/newcard.compoent';
+import { newcardComponent} from 'src/app/newcard/newcard.component';
 import { EbaylowerCard} from 'src/app/lowerCard/lowerCard.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EbaySignIn} from 'src/app/SignIn/SignIn.component';
@@ -17,6 +17,14 @@ import { Ebayregister } from './register/register.component';
 import { EbaybrandOutlet } from './brandOutlet/brandOutlet.component';
 import { EbaydailyDeals } from './dailyDeals/dailyDeals.component';
 import { EbayhelpAndContact } from './helpAndContact/helpAndContact.component';
+import { SignInLayoutComponent } from './sign-in-layout/sign-in-layout.component';
+import { SignInButtonsComponent } from './sign-in-buttons/sign-in-buttons.component';
+import { newButtonComponent } from './newButton/newButton.component';
+import { SignInBottomComponent } from './sign-in-bottom/sign-in-bottom.component';
+import { EbaySignInTop } from './SignInTop/SIgnInTop.component';
+import { RegisterTopComponent } from './register-top/register-top.component';
+import { RegisterBottomComponent } from './register-bottom/register-bottom.component';
+import { RegisterLeftComponent } from './register-left/register-left.component';
 
 
 @NgModule({
@@ -36,7 +44,17 @@ import { EbayhelpAndContact } from './helpAndContact/helpAndContact.component';
     Ebayregister,
     EbaybrandOutlet,
     EbaydailyDeals,
-    EbayhelpAndContact
+    EbayhelpAndContact,
+    SignInLayoutComponent,
+    SignInButtonsComponent,
+    newButtonComponent,
+    SignInBottomComponent,
+    EbaySignInTop,
+    RegisterTopComponent,
+    RegisterBottomComponent,
+    RegisterLeftComponent,
+    
+
   ],
   imports: [
     BrowserModule,

@@ -7,16 +7,18 @@ import { Ebayregister } from './register/register.component';
 import { EbaybrandOutlet } from './brandOutlet/brandOutlet.component';
 import { EbaydailyDeals } from './dailyDeals/dailyDeals.component';
 import { EbayhelpAndContact } from './helpAndContact/helpAndContact.component';
+import { SignInLayoutComponent } from './sign-in-layout/sign-in-layout.component';
+import { RegisterLayoutComponent } from './registerLayout/registerLayout.component';
 
 
 const routes: Routes = [
   {path: "", component: EbaydefaultLayout},
-  {path: "SignIn", component: EbaySignIn},
-  {path: "register", component: Ebayregister},
+  {path: "SignIn", component: SignInLayoutComponent},
+  {path: "register", component: RegisterLayoutComponent},
   {path: "brandOutlet", component: EbaybrandOutlet},
   {path: "dailyDeals", component: EbaydailyDeals},
   {path: "helpAndContact", component: EbayhelpAndContact},
-] 
+  ] 
 
 
 

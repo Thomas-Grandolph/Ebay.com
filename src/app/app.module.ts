@@ -25,7 +25,8 @@ import { EbaySignInTop } from './SignInTop/SIgnInTop.component';
 import { RegisterTopComponent } from './register-top/register-top.component';
 import { RegisterBottomComponent } from './register-bottom/register-bottom.component';
 import { RegisterLeftComponent } from './register-left/register-left.component';
-
+import { UserInfoComponent } from './user-info/user-info.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -53,12 +54,14 @@ import { RegisterLeftComponent } from './register-left/register-left.component';
     RegisterTopComponent,
     RegisterBottomComponent,
     RegisterLeftComponent,
+    UserInfoComponent,
     
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

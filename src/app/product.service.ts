@@ -7,7 +7,7 @@ import { ProductItemModel } from "./product.model";
 })
 export class ProductsService{
     private baseUrl:string= "https://newebaywebsite-default-rtdb.firebaseio.com/";
-    private productsEndpoint: string = "ProductsService.json"
+    private productsEndpoint: string = "products.json"
    
     constructor(private http:HttpClient) {
 

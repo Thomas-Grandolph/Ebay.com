@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { ProductsService } from "../product.service";
 import { ProductItemModel } from '/home/loud/angular-workspace/ebay.com/src/app/product.model';
 
@@ -7,7 +7,8 @@ import { ProductItemModel } from '/home/loud/angular-workspace/ebay.com/src/app/
     templateUrl: 'MiddleCarousel.component.html',
     styleUrls: ['MiddleCarousel.component.css']
 })
-export class EbayMiddleCarousel {
+export class EbayMiddleCarousel implements OnInit{
+
     title = 'EbayMiddleCarousel';
 
 

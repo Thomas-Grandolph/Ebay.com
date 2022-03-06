@@ -1,6 +1,6 @@
 export interface UserInfo {
     FirstName: string;
-    Lastname: string;
+    LastName: string;
     GitHub: string;
     mix_id: string;
 }

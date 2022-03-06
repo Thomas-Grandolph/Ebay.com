@@ -27,6 +27,7 @@ import { RegisterBottomComponent } from './register-bottom/register-bottom.compo
 import { RegisterLeftComponent } from './register-left/register-left.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import {HttpClientModule} from '@angular/common/http'
+import { RegisterLayoutComponent } from './registerLayout/registerLayout.component';
 
 @NgModule({
   declarations: [
@@ -55,8 +56,8 @@ import {HttpClientModule} from '@angular/common/http'
     RegisterBottomComponent,
     RegisterLeftComponent,
     UserInfoComponent,
+    RegisterLayoutComponent
     
-
   ],
   imports: [
     BrowserModule,

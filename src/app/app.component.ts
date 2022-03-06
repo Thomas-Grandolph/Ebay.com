@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProductItemModel } from './product.model'; 
-import {mock_list} from './mock_list/mock_list.component';
+import { ProductItemModel } from './product.model';
+import { ProductsService } from './product.service';
 
 @Component({
   selector: 'app-root',
@@ -10,16 +10,30 @@ import {mock_list} from './mock_list/mock_list.component';
 export class AppComponent {
   title = 'ebay.com';
 
-  products: ProductItemModel[]=[];
+  products: ProductItemModel[] = [];
 
-  constructor(){
-    for(var product of mock_list) {
-      console.log(product);
-      this.products.push(product);
-    }
-    
-
+  constructor(private productsService: ProductsService) {
 
   }
-  
+
+  ngOnInit(): void {
+    this.productsService.getProducts().subscribe(data => {
+
+      console.log("Fetching product data");
+      for (var product of data) {
+        console.log(product)
+        this.products.push(product);
+
+      }
+    });
+        
+    }
 }
+
+
+
+
+
+
+
+

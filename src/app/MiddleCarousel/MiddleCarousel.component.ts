@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core";
+import { ProductsService } from "../product.service";
 import { ProductItemModel } from '/home/loud/angular-workspace/ebay.com/src/app/product.model';
-import {mock_list} from '/home/loud/angular-workspace/ebay.com/src/app/mock_list/mock_list.component';
+
 @Component({
     selector: 'ebay-MiddleCarousel',
     templateUrl: 'MiddleCarousel.component.html',
@@ -12,11 +13,20 @@ export class EbayMiddleCarousel {
 
     products: ProductItemModel[] = [];
 
-    constructor() {
-        for (var product of mock_list) {
-            console.log(product);
-            this.products.push(product);
+  constructor(private productsService: ProductsService) {
 
-        }
+  }
+
+  ngOnInit(): void {
+    this.productsService.getProducts().subscribe(data => {
+
+      console.log("Fetching product data");
+      for (var product of data) {
+        console.log(product)
+        this.products.push(product);
+
+      }
+    });
+        
     }
 }

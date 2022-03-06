@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductItemModel } from './product.model';
-import { ProductsService } from './product.service';
+
 
 @Component({
   selector: 'app-root',
@@ -10,24 +9,12 @@ import { ProductsService } from './product.service';
 export class AppComponent {
   title = 'ebay.com';
 
-  products: ProductItemModel[] = [];
+  
 
-  constructor(private productsService: ProductsService) {
+  constructor() {
 
   }
 
-  ngOnInit(): void {
-    this.productsService.getProducts().subscribe(data => {
-
-      console.log("Fetching product data");
-      for (var product of data) {
-        console.log(product)
-        this.products.push(product);
-
-      }
-    });
-        
-    }
 }
 
 

@@ -9,6 +9,7 @@ import { EbaydailyDeals } from './dailyDeals/dailyDeals.component';
 import { EbayhelpAndContact } from './helpAndContact/helpAndContact.component';
 import { SignInLayoutComponent } from './sign-in-layout/sign-in-layout.component';
 import { RegisterLayoutComponent } from './registerLayout/registerLayout.component';
+import { AddProductComponent } from './store/add-product/add-product.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: "brandOutlet", component: EbaybrandOutlet},
   {path: "dailyDeals", component: EbaydailyDeals},
   {path: "helpAndContact", component: EbayhelpAndContact},
+  {path: "admin", component: AddProductComponent,}
   ] 
 
 

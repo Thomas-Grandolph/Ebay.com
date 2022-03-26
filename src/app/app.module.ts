@@ -28,6 +28,8 @@ import { RegisterLeftComponent } from './register-left/register-left.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import {HttpClientModule} from '@angular/common/http'
 import { RegisterLayoutComponent } from './registerLayout/registerLayout.component';
+import { AddProductComponent } from './store/add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -56,13 +58,15 @@ import { RegisterLayoutComponent } from './registerLayout/registerLayout.compone
     RegisterBottomComponent,
     RegisterLeftComponent,
     UserInfoComponent,
-    RegisterLayoutComponent
+    RegisterLayoutComponent,
+    AddProductComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

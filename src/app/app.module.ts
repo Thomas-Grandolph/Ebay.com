@@ -30,6 +30,9 @@ import {HttpClientModule} from '@angular/common/http'
 import { RegisterLayoutComponent } from './registerLayout/registerLayout.component';
 import { AddProductComponent } from './store/add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore'
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -66,7 +69,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

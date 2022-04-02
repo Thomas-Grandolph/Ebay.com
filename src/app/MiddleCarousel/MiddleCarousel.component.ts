@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { ProductsService } from "../product.service";
-import { ProductItemModel } from '/home/loud/angular-workspace/ebay.com/src/app/product.model';
+import { ProductItemModel } from 'src/app/product.model';
 
 @Component({
     selector: 'ebay-MiddleCarousel',

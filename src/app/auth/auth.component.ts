@@ -8,6 +8,7 @@ import { Component } from "@angular/core";
 export class AuthComponent { 
     public onSubmit(data:any){
         console.log("Button clicked");
+        console.log(data);
     }
 
 

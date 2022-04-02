@@ -29,6 +29,11 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import {HttpClientModule} from '@angular/common/http'
 import { RegisterLayoutComponent } from './registerLayout/registerLayout.component';
 import { AuthComponent } from './auth/auth.component';
+import { AddProductComponent } from './store/add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore'
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -58,13 +63,17 @@ import { AuthComponent } from './auth/auth.component';
     RegisterLeftComponent,
     UserInfoComponent,
     RegisterLayoutComponent,
-    AuthComponent
+    AuthComponent,
+    AddProductComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

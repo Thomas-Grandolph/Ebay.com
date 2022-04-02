@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/ebay.com",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",

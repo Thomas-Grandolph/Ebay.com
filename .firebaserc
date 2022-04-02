@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "newebaywebsite"
+  },
+  "targets": {
+    "newebaywebsite": {
+      "hosting": {
+        "ebay.com": [
+          "newebaywebsite"
+        ]
+      }
+    }
   }
 }

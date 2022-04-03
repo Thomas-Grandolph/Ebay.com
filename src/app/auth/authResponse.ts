@@ -3,5 +3,6 @@ export interface AuthResonse {
     email:string,
     refereshToken:string,
     expiresIn:string,
-    localId:string
+    localId:string,
+    registered?:boolean
 }

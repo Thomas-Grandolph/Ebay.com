@@ -10,6 +10,6 @@
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"ngModel name="password"
       required password minlength="8">
     
-    <button class="btn btn-primary" type="submit" [disabled] = "!authForm.valid" >Login</button> 
-    <button type="submit" class="btn btn-primary">Sign Up</button>
+    <button class="btn btn-primary" type="submit" [disabled] = "!authForm.valid" (click)="buttonClicked='Login'">Login</button> 
+    <button class="btn btn-primary" type="submit" (click)="buttonClicked='SignUp'">Sign Up</button>
   </form>

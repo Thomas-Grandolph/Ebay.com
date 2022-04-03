@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { NgForm } from "@angular/forms";
 
 @Component({
     selector: "ebay-auth",
@@ -6,9 +7,9 @@ import { Component } from "@angular/core";
 })
 
 export class AuthComponent { 
-    public onSubmit(data:any){
+    public onSubmit(data:NgForm){
         console.log("Button clicked");
-        console.log(data);
+        console.log(data.value);
     }
 
 
